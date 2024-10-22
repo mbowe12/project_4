@@ -36,6 +36,11 @@ app.use("/about", express.static("public/about.html"));
 app.use("/newmusic", express.static("public/newmusic.html"));
 app.use("/album.html", express.static("public/album.html"));
 
-app.listen(3000, () => {
-  console.log("running on port 3000");
+// app.listen(3000, () => {
+//   console.log("running on port 3000");
+// });
+
+let port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log("listening at ", port);
 });
