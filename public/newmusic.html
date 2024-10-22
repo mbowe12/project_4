@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Any new music?</title>
+</head>
+<body>
+    <header>
+        <a href="/about">About the music</a>
+        <a href="/"><img src="assets/KGLW-Icon.png" alt="Home" /></a>
+        <a href="/newmusic" class="activeItem">Any new music?</a>
+    </header>
+    <main class="mainContainer">
+        <div class="container">
+            <div class="textContainer center">
+                <h1>Days since last King Gizz release:</h1>
+                <h2 id="daysSinceRelease">Calculating...</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="textContainer">
+                <h2>Already listened to all their music?</h2>
+                <p>Okay superfan, what do you think their next album should be called then?</p>
+            </div>
+            <div class="formContainer">
+                <input type="text" id="albumName" placeholder="Enter album name" />
+                <input type="text" id="submitterName" placeholder="Submitted by" />
+                <button id="newAlbumButton" class="buttonSecondary">Create a new album</button>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Album Submissions</h2>
+            <table id="albumSubmissionsTable">
+                <thead>
+                    <tr>
+                        <th>Album Name</th>
+                        <th>Submitted By</th>
+                        <th>Date & Time</th>
+                    </tr>
+                </thead>
+                <tbody id="albumSubmissionsBody">
+                    <!-- add submissions here  -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="kglwAlbumMaker.js"></script>
+</body>
+</html>
